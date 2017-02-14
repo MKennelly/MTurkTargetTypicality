@@ -12,7 +12,6 @@
     margin-left: 75;
   }
   .itemgroup{
-    display: none;
     margin: 0 auto;
     padding-top: 20px;
     width: 600px;
@@ -43,6 +42,19 @@
 </style>
 
 <section class="container">
+  <input type="hidden" name="SUBJECT-FILE" value="${SUBJECT-FILE}"/>
+  <input type="hidden" name="category" value="${category}"/>
+  <input type="hidden" name="filename" value="${filename}"/>
+  <input type="hidden" name="item" value="${item}"/>
+  <input type="hidden" name="Tar_typ" value="${Tar_typ}"/>
+  <input type="hidden" name="Dis_Typ" value="${Dis_Typ}"/>
+  <input type="hidden" name="Sim-Dif" value="${Sim-Dif}"/>
+  <input type="hidden" name="Dis_num" value="${Dis_num}"/>
+  <input type="hidden" name="Tarpic" value="${Tarpic}"/>
+  <input type="hidden" name="dispic" value="${dispic}"/>
+  <input type="hidden" name="leftpic" value="${leftpic}"/>
+  <input type="hidden" name="rightpic" value="${rightpic}"/>
+  <input type="hidden" name="compare-image" value="${compare-image}"/>
   <div class="row col-xs-12 col-md-12"><!-- Instructions -->
     <div class="panel panel-primary">
       <div class="panel-heading">
@@ -54,7 +66,7 @@
     </div>
     <a href="#" id="startExpt">Start Experiment</a>
     <fieldset class="itemgroup" id="trial1">
-      <img src="http://qvcl.queensu.ca/turkimg/Atypical-apple__distractor-atyp-dis1.bmp"/>
+      <img src="http://qvcl.queensu.ca/turkimg/${compare-image}"/>
       <div class="buttongroup">
         <div class="button">
           <input type="radio" class="responseBtn" name="Q1" value="1" />
@@ -91,7 +103,7 @@
       </div>
     </fieldset>
     <fieldset class="itemgroup" id="trial2">
-      <img src="http://qvcl.queensu.ca/turkimg/Typical-wrench__distractor-typ-sim5.bmp"/>
+      <img src="http://qvcl.queensu.ca/turkimg/${compare-image}"/>
       <div class="buttongroup">
         <div class="button">
           <input type="radio" class="responseBtn" name="Q2" value="1" />
@@ -201,7 +213,6 @@
         <p id="labelSeven">Very Similar</p>
       </div>
     </fieldset>
-    <input type="submit" id="submitButton">
   </div>
 </section>
 

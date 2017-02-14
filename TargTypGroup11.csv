@@ -1,0 +1,81 @@
+SUBJECT-FILE,category,filename,item,Tar_typ,Dis_Typ,Sim-Dif,Dis_num,Tarpic,dispic,leftpic,rightpic,compare-image
+11,SCISSORS ,SCISSORS,34,Atypical,typ,sim,4,Atypical_SCISSORS.tga,SCISSORS_typ_sim4.tga,Atypical_SCISSORS.tga,SCISSORS_typ_sim4.tga,Atypical_SCISSORS_typ_sim4.bmp
+11,CLOCK ,CLOCK,14,Atypical,typ,sim,4,Atypical_CLOCK.tga,CLOCK_typ_sim4.tga,Atypical_CLOCK.tga,CLOCK_typ_sim4.tga,Atypical_CLOCK_typ_sim4.bmp
+11,FAN ,FAN,20,Atypical,atyp,sim,2,Atypical_FAN.tga,FAN_atyp_sim2.tga,Atypical_FAN.tga,FAN_atyp_sim2.tga,Atypical_FAN_atyp_sim2.bmp
+11,SWORD ,SWORD,36,Typical,typ,sim,1,Typical_SWORD.tga,SWORD_typ_sim1.tga,Typical_SWORD.tga,SWORD_typ_sim1.tga,Typical_SWORD_typ_sim1.bmp
+11,DRUM ,DRUM,19,Typical,atyp,sim,5,Typical_DRUM.tga,DRUM_atyp_sim5.tga,DRUM_atyp_sim5.tga,Typical_DRUM.tga,Typical_DRUM_atyp_sim5.bmp
+11,STAPLER ,STAPLER,35,Typical,typ,sim,3,Typical_STAPLER.tga,STAPLER_typ_sim3.tga,STAPLER_typ_sim3.tga,Typical_STAPLER.tga,Typical_STAPLER_typ_sim3.bmp
+11,BAG ,BAG,3,Typical,typ,dis,2,Typical_BAG.tga,BAG_typ_dis2.tga,BAG_typ_dis2.tga,Typical_BAG.tga,Typical_BAG_typ_dis2.bmp
+11,DOORKNOB ,DOORKNOB,17,Typical,atyp,dis,4,Typical_DOORKNOB.tga,DOORKNOB_atyp_dis4.tga,DOORKNOB_atyp_dis4.tga,Typical_DOORKNOB.tga,Typical_DOORKNOB_atyp_dis4.bmp
+11,LEAF ,LEAF,30,Atypical,atyp,sim,2,Atypical_LEAF.tga,LEAF_atyp_sim2.tga,Atypical_LEAF.tga,LEAF_atyp_sim2.tga,Atypical_LEAF_atyp_sim2.bmp
+11,HAMMER ,HAMMER,24,Atypical,typ,sim,4,Atypical_HAMMER.tga,HAMMER_typ_sim4.tga,Atypical_HAMMER.tga,HAMMER_typ_sim4.tga,Atypical_HAMMER_typ_sim4.bmp
+11,CHAIR ,CHAIR,13,Atypical,typ,dis,1,Atypical_CHAIR.tga,CHAIR_typ_dis1.tga,CHAIR_typ_dis1.tga,Atypical_CHAIR.tga,Atypical_CHAIR_typ_dis1.bmp
+11,CANDLE ,CANDLE,12,Typical,typ,dis,4,Typical_CANDLE.tga,CANDLE_typ_dis4.tga,Typical_CANDLE.tga,CANDLE_typ_dis4.tga,Typical_CANDLE_typ_dis4.bmp
+11,BRIEFCASE ,BRIEFCASE,8,Atypical,atyp,dis,1,Atypical_BRIEFCASE.tga,BRIEFCASE_atyp_dis1.tga,Atypical_BRIEFCASE.tga,BRIEFCASE_atyp_dis1.tga,Atypical_BRIEFCASE_atyp_dis1.bmp
+11,BASKET ,BASKET,4,Atypical,typ,sim,4,Atypical_BASKET.tga,BASKET_typ_sim4.tga,Atypical_BASKET.tga,BASKET_typ_sim4.tga,Atypical_BASKET_typ_sim4.bmp
+11,CANDLE ,CANDLE,12,Atypical,typ,dis,3,Atypical_CANDLE.tga,CANDLE_typ_dis3.tga,Atypical_CANDLE.tga,CANDLE_typ_dis3.tga,Atypical_CANDLE_typ_dis3.bmp
+11,DRILL ,DRILL,18,Atypical,atyp,dis,1,Atypical_DRILL.tga,DRILL_atyp_dis1.tga,Atypical_DRILL.tga,DRILL_atyp_dis1.tga,Atypical_DRILL_atyp_dis1.bmp
+11,FLOWER ,FLOWER,21,Typical,atyp,sim,1,Typical_FLOWER.tga,FLOWER_atyp_sim1.tga,FLOWER_atyp_sim1.tga,Typical_FLOWER.tga,Typical_FLOWER_atyp_sim1.bmp
+11,GLASSES ,GLASSES,22,Typical,typ,dis,4,Typical_GLASSES.tga,GLASSES_typ_dis4.tga,Typical_GLASSES.tga,GLASSES_typ_dis4.tga,Typical_GLASSES_typ_dis4.bmp
+11,HELMET ,HELMET,27,Atypical,atyp,dis,3,Atypical_HELMET.tga,HELMET_atyp_dis3.tga,HELMET_atyp_dis3.tga,Atypical_HELMET.tga,Atypical_HELMET_atyp_dis3.bmp
+11,FLOWER ,FLOWER,21,Atypical,typ,dis,5,Atypical_FLOWER.tga,FLOWER_typ_dis5.tga,FLOWER_typ_dis5.tga,Atypical_FLOWER.tga,Atypical_FLOWER_typ_dis5.bmp
+11,LAMP ,LAMP,29,Atypical,atyp,sim,4,Atypical_LAMP.tga,LAMP_atyp_sim4.tga,LAMP_atyp_sim4.tga,Atypical_LAMP.tga,Atypical_LAMP_atyp_sim4.bmp
+11,APPLE ,APPLE,1,Atypical,typ,dis,5,Atypical_APPLE.tga,APPLE_typ_dis5.tga,APPLE_typ_dis5.tga,Atypical_APPLE.tga,Atypical_APPLE_typ_dis5.bmp
+11,CAMERA ,CAMERA,11,Atypical,typ,dis,5,Atypical_CAMERA.tga,CAMERA_typ_dis5.tga,CAMERA_typ_dis5.tga,Atypical_CAMERA.tga,Atypical_CAMERA_typ_dis5.bmp
+11,TAPE DISPENSER ,TAPE,38,Typical,atyp,dis,2,Typical_TAPE.tga,TAPE_atyp_dis2.tga,Typical_TAPE.tga,TAPE_atyp_dis2.tga,Typical_TAPE_atyp_dis2.bmp
+11,TABLE,TABLE,37,Typical,atyp,dis,4,Typical_TABLE.tga,TABLE_atyp_dis4.tga,TABLE_atyp_dis4.tga,Typical_TABLE.tga,Typical_TABLE_atyp_dis4.bmp
+11,HELMET ,HELMET,27,Typical,atyp,dis,4,Typical_HELMET.tga,HELMET_atyp_dis4.tga,HELMET_atyp_dis4.tga,Typical_HELMET.tga,Typical_HELMET_atyp_dis4.bmp
+11,PIPE ,PIPE,31,Atypical,typ,dis,5,Atypical_PIPE.tga,PIPE_typ_dis5.tga,PIPE_typ_dis5.tga,Atypical_PIPE.tga,Atypical_PIPE_typ_dis5.bmp
+11,GRENADE ,GRENADE,23,Typical,typ,dis,2,Typical_GRENADE.tga,GRENADE_typ_dis2.tga,GRENADE_typ_dis2.tga,Typical_GRENADE.tga,Typical_GRENADE_typ_dis2.bmp
+11,CAKE ,CAKE,10,Atypical,atyp,sim,2,Atypical_CAKE.tga,CAKE_atyp_sim2.tga,Atypical_CAKE.tga,CAKE_atyp_sim2.tga,Atypical_CAKE_atyp_sim2.bmp
+11,BASKET ,BASKET,4,Typical,typ,sim,5,Typical_BASKET.tga,BASKET_typ_sim5.tga,Typical_BASKET.tga,BASKET_typ_sim5.tga,Typical_BASKET_typ_sim5.bmp
+11,PISTOL ,PISTOL,32,Atypical,typ,dis,3,Atypical_PISTOL.tga,PISTOL_typ_dis3.tga,Atypical_PISTOL.tga,PISTOL_typ_dis3.tga,Atypical_PISTOL_typ_dis3.bmp
+11,BRIEFCASE,BRIEFCASE,8,Typical,atyp,dis,2,Typical_BRIEFCASE.tga,BRIEFCASE_atyp_dis2.tga,Typical_BRIEFCASE.tga,BRIEFCASE_atyp_dis2.tga,Typical_BRIEFCASE_atyp_dis2.bmp
+11,BENCH,BENCH,5,Typical,typ,sim,3,Typical_BENCH.tga,BENCH_typ_sim3.tga,BENCH_typ_sim3.tga,Typical_BENCH.tga,Typical_BENCH_typ_sim3.bmp
+11,IRON ,IRON,28,Atypical,atyp,dis,1,Atypical_IRON.tga,IRON_atyp_dis1.tga,Atypical_IRON.tga,IRON_atyp_dis1.tga,Atypical_IRON_atyp_dis1.bmp
+11,STAPLER ,STAPLER,35,Atypical,typ,sim,2,Atypical_STAPLER.tga,STAPLER_typ_sim2.tga,STAPLER_typ_sim2.tga,Atypical_STAPLER.tga,Atypical_STAPLER_typ_sim2.bmp
+11,CAMERA ,CAMERA,11,Typical,atyp,sim,1,Typical_CAMERA.tga,CAMERA_atyp_sim1.tga,CAMERA_atyp_sim1.tga,Typical_CAMERA.tga,Typical_CAMERA_atyp_sim1.bmp
+11,GRENADE ,GRENADE,23,Atypical,typ,dis,1,Atypical_GRENADE.tga,GRENADE_typ_dis1.tga,GRENADE_typ_dis1.tga,Atypical_GRENADE.tga,Atypical_GRENADE_typ_dis1.bmp
+11,PISTOL ,PISTOL,32,Typical,typ,dis,4,Typical_PISTOL.tga,PISTOL_typ_dis4.tga,Typical_PISTOL.tga,PISTOL_typ_dis4.tga,Typical_PISTOL_typ_dis4.bmp
+11,CLOCK,CLOCK,14,Typical,typ,sim,5,Typical_CLOCK.tga,CLOCK_typ_sim5.tga,Typical_CLOCK.tga,CLOCK_typ_sim5.tga,Typical_CLOCK_typ_sim5.bmp
+11,FAN ,FAN,20,Typical,atyp,sim,3,Typical_FAN.tga,FAN_atyp_sim3.tga,Typical_FAN.tga,FAN_atyp_sim3.tga,Typical_FAN_atyp_sim3.bmp
+11,SAW ,SAW,33,Typical,typ,dis,2,Typical_SAW.tga,SAW_typ_dis2.tga,SAW_typ_dis2.tga,Typical_SAW.tga,Typical_SAW_typ_dis2.bmp
+11,BOTTLE ,BOTTLE,7,Atypical,atyp,dis,3,Atypical_BOTTLE.tga,BOTTLE_atyp_dis3.tga,BOTTLE_atyp_dis3.tga,Atypical_BOTTLE.tga,Atypical_BOTTLE_atyp_dis3.bmp
+11,TABLE ,TABLE,37,Atypical,atyp,dis,3,Atypical_TABLE.tga,TABLE_atyp_dis3.tga,TABLE_atyp_dis3.tga,Atypical_TABLE.tga,Atypical_TABLE_atyp_dis3.bmp
+11,HEADPHONES ,HEADPHONES,26,Atypical,atyp,dis,5,Atypical_HEADPHONES.tga,HEADPHONES_atyp_dis5.tga,Atypical_HEADPHONES.tga,HEADPHONES_atyp_dis5.tga,Atypical_HEADPHONES_atyp_dis5.bmp
+11,SAW ,SAW,33,Atypical,typ,dis,1,Atypical_SAW.tga,SAW_typ_dis1.tga,SAW_typ_dis1.tga,Atypical_SAW.tga,Atypical_SAW_typ_dis1.bmp
+11,SCISSORS ,SCISSORS,34,Typical,typ,sim,5,Typical_SCISSORS.tga,SCISSORS_typ_sim5.tga,Typical_SCISSORS.tga,SCISSORS_typ_sim5.tga,Typical_SCISSORS_typ_sim5.bmp
+11,BOTTLE ,BOTTLE,7,Typical,atyp,dis,4,Typical_BOTTLE.tga,BOTTLE_atyp_dis4.tga,BOTTLE_atyp_dis4.tga,Typical_BOTTLE.tga,Typical_BOTTLE_atyp_dis4.bmp
+11,DOG ,DOG,16,Atypical,atyp,dis,5,Atypical_DOG.tga,DOG_atyp_dis5.tga,Atypical_DOG.tga,DOG_atyp_dis5.tga,Atypical_DOG_atyp_dis5.bmp
+11,TELEPHONE ,TELEPHONE,39,Atypical,atyp,sim,4,Atypical_TELEPHONE.tga,TELEPHONE_atyp_sim4.tga,TELEPHONE_atyp_sim4.tga,Atypical_TELEPHONE.tga,Atypical_TELEPHONE_atyp_sim4.bmp
+11,CAKE,CAKE,10,Typical,atyp,sim,3,Typical_CAKE.tga,CAKE_atyp_sim3.tga,Typical_CAKE.tga,CAKE_atyp_sim3.tga,Typical_CAKE_atyp_sim3.bmp
+11,HAT ,HAT,25,Typical,typ,sim,3,Typical_HAT.tga,HAT_typ_sim3.tga,HAT_typ_sim3.tga,Typical_HAT.tga,Typical_HAT_typ_sim3.bmp
+11,PIPE ,PIPE,31,Typical,atyp,sim,1,Typical_PIPE.tga,PIPE_atyp_sim1.tga,PIPE_atyp_sim1.tga,Typical_PIPE.tga,Typical_PIPE_atyp_sim1.bmp
+11,HAMMER ,HAMMER,24,Typical,typ,sim,5,Typical_HAMMER.tga,HAMMER_typ_sim5.tga,Typical_HAMMER.tga,HAMMER_typ_sim5.tga,Typical_HAMMER_typ_sim5.bmp
+11,AXE ,AXE,2,Atypical,typ,dis,3,Atypical_AXE.tga,AXE_typ_dis3.tga,Atypical_AXE.tga,AXE_typ_dis3.tga,Atypical_AXE_typ_dis3.bmp
+11,DOG,DOG,16,Typical,typ,sim,1,Typical_DOG.tga,DOG_typ_sim1.tga,Typical_DOG.tga,DOG_typ_sim1.tga,Typical_DOG_typ_sim1.bmp
+11,CUP ,CUP,15,Typical,typ,sim,3,Typical_CUP.tga,CUP_typ_sim3.tga,CUP_typ_sim3.tga,Typical_CUP.tga,Typical_CUP_typ_sim3.bmp
+11,AXE ,AXE,2,Typical,typ,dis,4,Typical_AXE.tga,AXE_typ_dis4.tga,Typical_AXE.tga,AXE_typ_dis4.tga,Typical_AXE_typ_dis4.bmp
+11,GLASSES ,GLASSES,22,Atypical,typ,dis,3,Atypical_GLASSES.tga,GLASSES_typ_dis3.tga,Atypical_GLASSES.tga,GLASSES_typ_dis3.tga,Atypical_GLASSES_typ_dis3.bmp
+11,BAG ,BAG,3,Atypical,typ,dis,1,Atypical_BAG.tga,BAG_typ_dis1.tga,BAG_typ_dis1.tga,Atypical_BAG.tga,Atypical_BAG_typ_dis1.bmp
+11,SWORD ,SWORD,36,Atypical,atyp,dis,5,Atypical_SWORD.tga,SWORD_atyp_dis5.tga,Atypical_SWORD.tga,SWORD_atyp_dis5.tga,Atypical_SWORD_atyp_dis5.bmp
+11,HAT ,HAT,25,Atypical,typ,sim,2,Atypical_HAT.tga,HAT_typ_sim2.tga,HAT_typ_sim2.tga,Atypical_HAT.tga,Atypical_HAT_typ_sim2.bmp
+11,CHAIR ,CHAIR,13,Typical,typ,dis,2,Typical_CHAIR.tga,CHAIR_typ_dis2.tga,CHAIR_typ_dis2.tga,Typical_CHAIR.tga,Typical_CHAIR_typ_dis2.bmp
+11,HEADPHONES2,HEADPHONES,26,Typical,typ,sim,1,Typical_HEADPHONES.tga,HEADPHONES_typ_sim1.tga,Typical_HEADPHONES.tga,HEADPHONES_typ_sim1.tga,Typical_HEADPHONES_typ_sim1.bmp
+11,LAMP ,LAMP,29,Typical,atyp,sim,5,Typical_LAMP.tga,LAMP_atyp_sim5.tga,LAMP_atyp_sim5.tga,Typical_LAMP.tga,Typical_LAMP_atyp_sim5.bmp
+11,CACTUS ,CACTUS,9,Atypical,atyp,sim,4,Atypical_CACTUS.tga,CACTUS_atyp_sim4.tga,CACTUS_atyp_sim4.tga,Atypical_CACTUS.tga,Atypical_CACTUS_atyp_sim4.bmp
+11,CUP ,CUP,15,Atypical,typ,sim,2,Atypical_CUP.tga,CUP_typ_sim2.tga,CUP_typ_sim2.tga,Atypical_CUP.tga,Atypical_CUP_typ_sim2.bmp
+11,IRON ,IRON,28,Typical,atyp,dis,2,Typical_IRON.tga,IRON_atyp_dis2.tga,Typical_IRON.tga,IRON_atyp_dis2.tga,Typical_IRON_atyp_dis2.bmp
+11,APPLE ,APPLE,1,Typical,atyp,sim,1,Typical_APPLE.tga,APPLE_atyp_sim1.tga,APPLE_atyp_sim1.tga,Typical_APPLE.tga,Typical_APPLE_atyp_sim1.bmp
+11,BENCH ,BENCH,5,Atypical,typ,sim,2,Atypical_BENCH.tga,BENCH_typ_sim2.tga,BENCH_typ_sim2.tga,Atypical_BENCH.tga,Atypical_BENCH_typ_sim2.bmp
+11,TAPE DISPENSER ,TAPE,38,Atypical,atyp,dis,1,Atypical_TAPE.tga,TAPE_atyp_dis1.tga,Atypical_TAPE.tga,TAPE_atyp_dis1.tga,Atypical_TAPE_atyp_dis1.bmp
+11,WRENCH ,WRENCH,40,Typical,atyp,sim,3,Typical_WRENCH.tga,WRENCH_atyp_sim3.tga,Typical_WRENCH.tga,WRENCH_atyp_sim3.tga,Typical_WRENCH_atyp_sim3.bmp
+11,DRUM ,DRUM,19,Atypical,atyp,sim,4,Atypical_DRUM.tga,DRUM_atyp_sim4.tga,DRUM_atyp_sim4.tga,Atypical_DRUM.tga,Atypical_DRUM_atyp_sim4.bmp
+11,WRENCH ,WRENCH,40,Atypical,atyp,sim,2,Atypical_WRENCH.tga,WRENCH_atyp_sim2.tga,Atypical_WRENCH.tga,WRENCH_atyp_sim2.tga,Atypical_WRENCH_atyp_sim2.bmp
+11,DRILL ,DRILL,18,Typical,atyp,dis,2,Typical_DRILL.tga,DRILL_atyp_dis2.tga,Typical_DRILL.tga,DRILL_atyp_dis2.tga,Typical_DRILL_atyp_dis2.bmp
+11,TELEPHONE ,TELEPHONE,39,Typical,atyp,sim,5,Typical_TELEPHONE.tga,TELEPHONE_atyp_sim5.tga,TELEPHONE_atyp_sim5.tga,Typical_TELEPHONE.tga,Typical_TELEPHONE_atyp_sim5.bmp
+11,BICYCLE ,BICYCLE,6,Typical,typ,sim,1,Typical_BICYCLE.tga,BICYCLE_typ_sim1.tga,Typical_BICYCLE.tga,BICYCLE_typ_sim1.tga,Typical_BICYCLE_typ_sim1.bmp
+11,BICYCLE ,BICYCLE,6,Atypical,atyp,dis,5,Atypical_BICYCLE.tga,BICYCLE_atyp_dis5.tga,Atypical_BICYCLE.tga,BICYCLE_atyp_dis5.tga,Atypical_BICYCLE_atyp_dis5.bmp
+11,DOORKNOB ,DOORKNOB,17,Atypical,atyp,dis,3,Atypical_DOORKNOB.tga,DOORKNOB_atyp_dis3.tga,DOORKNOB_atyp_dis3.tga,Atypical_DOORKNOB.tga,Atypical_DOORKNOB_atyp_dis3.bmp
+11,LEAF ,LEAF,30,Typical,atyp,sim,3,Typical_LEAF.tga,LEAF_atyp_sim3.tga,Typical_LEAF.tga,LEAF_atyp_sim3.tga,Typical_LEAF_atyp_sim3.bmp
+11,CACTUS ,CACTUS,9,Typical,atyp,sim,5,Typical_CACTUS.tga,CACTUS_atyp_sim5.tga,CACTUS_atyp_sim5.tga,Typical_CACTUS.tga,Typical_CACTUS_atyp_sim5.bmp
