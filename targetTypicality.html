@@ -31,10 +31,10 @@
   .labelgroup p{
     display: inline-block;
   }
-  #labelOne{
+  .labelOne{
     margin-left: 50px;
   }
-  #labelSeven{
+  .labelSeven{
     margin-left: 325px
   }
   #submitButton{
@@ -43,7 +43,19 @@
 </style>
 
 <div class="container">
-  <div class="row col-xs-12 col-md-12"><!-- Instructions -->
+  <div id="splash" class="row col-xs-12 col-md-12">
+    <div id="splashdiv" class="panel panel-primary">
+      <div class="panel-heading">
+        Visual Similarity of Two Objects
+      </div>
+      <div class="panel-body">
+        In this study you will be shown 80 total images which consist of two items side-by-side. <br>
+        Under each image there will be radio buttons from 1 to 7 with 1 meaning the objects are very visually dissimilar and 7 meaning they are very visually similar.<br>
+        The questions will be divided into 20 pages of 4 questions each and the button to the next page will be revealed after selecting an answer for all 4 questions. <br>
+      </div>
+    </div>
+  </div>
+  <div id="questions" class="row col-xs-12 col-md-12"><!-- Instructions -->
     <div class="panel panel-primary">
       <div class="panel-heading">
         <strong>Instructions</strong>
@@ -98,8 +110,8 @@
         </div>
       </div>
       <div class="labelgroup">
-        <p id="labelOne">Very Dissimilar</p>
-        <p id="labelSeven">Very Similar</p>
+        <p class="labelOne">Very Dissimilar</p>
+        <p class="labelSeven">Very Similar</p>
       </div>
     </fieldset>
     <fieldset class="itemgroup" id="trial2">
@@ -148,8 +160,8 @@
         </div>
       </div>
       <div class="labelgroup">
-        <p id="labelOne">Very Dissimilar</p>
-        <p id="labelSeven">Very Similar</p>
+        <p class="labelOne">Very Dissimilar</p>
+        <p class="labelSeven">Very Similar</p>
       </div>
     </fieldset>
     <fieldset class="itemgroup" id="trial3">
@@ -198,8 +210,8 @@
         </div>
       </div>
       <div class="labelgroup">
-        <p id="labelOne">Very Dissimilar</p>
-        <p id="labelSeven">Very Similar</p>
+        <p class="labelOne">Very Dissimilar</p>
+        <p class="labelSeven">Very Similar</p>
       </div>
     </fieldset>
     <fieldset class="itemgroup" id="trial4">
@@ -248,8 +260,8 @@
         </div>
       </div>
       <div class="labelgroup">
-        <p id="labelOne">Very Dissimilar</p>
-        <p id="labelSeven">Very Similar</p>
+        <p class="labelOne">Very Dissimilar</p>
+        <p class="labelSeven">Very Similar</p>
       </div>
     </fieldset>
   </div>
