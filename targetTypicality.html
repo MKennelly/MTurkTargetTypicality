@@ -5,8 +5,16 @@
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous">
 </script>
+<script>
+  src="http://qvcl.queensu.ca/turkimg/files/jquery.csv.js"
+</script>
 
 <style>
+  #consentBtn{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
   img{
     width: 450px;
     margin-left: 75;
@@ -40,6 +48,9 @@
   #submitButton{
     display:none;
   }
+  #questions {
+    display: none;
+  }
 </style>
 
 <div class="container">
@@ -49,9 +60,17 @@
         Visual Similarity of Two Objects
       </div>
       <div class="panel-body">
-        In this study you will be shown 80 total images which consist of two items side-by-side. <br>
-        Under each image there will be radio buttons from 1 to 7 with 1 meaning the objects are very visually dissimilar and 7 meaning they are very visually similar.<br>
-        The questions will be divided into 20 pages of 4 questions each and the button to the next page will be revealed after selecting an answer for all 4 questions. <br>
+        In this study you will be shown 80 total images which consist of two items side-by-side. 
+        <br><br>
+        Under each image there will be radio buttons from 1 to 7 with 1 meaning the objects are very visually dissimilar and 7 meaning they are very visually similar.
+        <br><br>
+        The questions will be divided into 20 pages of 4 questions each and the button to the next page will be revealed after selecting an answer for all 4 questions.
+        <br><br>
+        The experiment will likely take around 10 minutes and you will be compensated with $1.60.
+        <br><br>
+        <a href="http://qvcl.queensu.ca/turkimg/files/LetterOfInformation_Consent_MTurk_20170215.pdf">LINK TO LETTER OF INFORMATION/CONSENT FORM</a>
+        <br><br>
+        <input type="button" class="button" id="consentBtn" value="Click to Continue to Questions">
       </div>
     </div>
   </div>
@@ -78,7 +97,7 @@
       <input type="hidden" name="leftpic" value="${leftpic1}"/>
       <input type="hidden" name="rightpic" value="${rightpic1}"/>
       <input type="hidden" name="compare-image" value="${compare-image1}"/>
-      <img src="http://qvcl.queensu.ca/turkimg/${compare-image1}"/>
+      <img id="im1" src="http://qvcl.queensu.ca/turkimg/${compare-image1}"/>
       <div class="buttongroup">
         <div class="button">
           <input type="radio" class="responseBtn" name="im1response" value="1" />
@@ -128,7 +147,7 @@
       <input type="hidden" name="leftpic" value="${leftpic2}"/>
       <input type="hidden" name="rightpic" value="${rightpic2}"/>
       <input type="hidden" name="compare-image" value="${compare-image2}"/>
-      <img src="http://qvcl.queensu.ca/turkimg/${compare-image2}"/>
+      <img id="im2" src="http://qvcl.queensu.ca/turkimg/${compare-image2}"/>
       <div class="buttongroup">
         <div class="button">
           <input type="radio" class="responseBtn" name="im2response" value="1" />
@@ -178,7 +197,7 @@
       <input type="hidden" name="leftpic" value="${leftpic3}"/>
       <input type="hidden" name="rightpic" value="${rightpic3}"/>
       <input type="hidden" name="compare-image" value="${compare-image3}"/>
-      <img src="http://qvcl.queensu.ca/turkimg/${compare-image3}"/>
+      <img id="im3" src="http://qvcl.queensu.ca/turkimg/${compare-image3}"/>
       <div class="buttongroup">
         <div class="button">
           <input type="radio" class="responseBtn" name="im3response" value="1" />
@@ -228,7 +247,7 @@
       <input type="hidden" name="leftpic" value="${leftpic4}"/>
       <input type="hidden" name="rightpic" value="${rightpic4}"/>
       <input type="hidden" name="compare-image" value="${compare-image4}"/>
-      <img src="http://qvcl.queensu.ca/turkimg/${compare-image4}"/>
+      <img id="im4" src="http://qvcl.queensu.ca/turkimg/${compare-image4}"/>
       <div class="buttongroup">
         <div class="button">
           <input type="radio" class="responseBtn" name="im4response" value="1" />
@@ -264,11 +283,46 @@
         <p class="labelSeven">Very Similar</p>
       </div>
     </fieldset>
+    <input id="nextBtn" type="button" class"button" value="Next Page">
   </div>
 </div>
 
 <script type="text/javascript">
+  //After they click the consent button, hide info screen and pull up questions.
+  $('#consentBtn').click(function(){
+    $('#splash').hide();
+    $('#questions').show();
+  });
+  //init vars for keeping track of pages and buttons.
+  var pageCount = 1;
   var q1=false, q2=false, q3=false, q4=false;
+  var data;
+  //Function to load in all of the values in the inputs for MTurk
+  $.ajax({
+    url: "http://qvcl.queensu.ca/turkimg/files/4TargTypGroup1.csv",
+    async: false,
+    success: function (csvd) {
+      console.log("found .csv");
+      data = $.csv.toArrays(csvd);
+    },
+    dataType: "text",
+    complete: loadPageData()
+  });
+  //Function updates values
+  function loadPageData(){
+    console.log("rows " + data.length + "cols " + data[0].length);
+    for(i=0; i<data.length; i++){
+      for (j=0; j<data[i].length; j++){
+
+      }
+    }
+    //set images
+    $('#im1').attr("src","http://qvcl.queensu.ca/turkimg/" + data[pageCount+1][12]);
+    $('#im2').attr("src","http://qvcl.queensu.ca/turkimg/" + data[pageCount+1][24]);
+    $('#im3').attr("src","http://qvcl.queensu.ca/turkimg/" + data[pageCount+1][36]);
+    $('#im4').attr("src","http://qvcl.queensu.ca/turkimg/" + data[pageCount+1][48]);
+  }
+  //Function for revealing next/submit button once they've answered the 4 buttons on the page.
   $('.responseBtn').click(function(e){
     switch(e.target.name){
       case 'im1response':
@@ -285,8 +339,20 @@
         break;
     }
     if (q1 && q2 && q3 && q4){
-      $('#submitButton').show();
+      if (pageCount <20){ //If they're not at the end, show the next page.
+        $('#nextBtn').show();
+      }
+      else{ //If they're at the end, show submit.
+        $('#submitButton').show();
+      }
     }
   });
+  //Next Button Function to load the values. 
+  $('#nextBtn').click(function(){
+    pageCount++;
+    loadPageData();
+  });
+    
+  
 </script>
 
