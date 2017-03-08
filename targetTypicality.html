@@ -10,6 +10,18 @@
 </script>
 
 <style>
+  #consent img{
+    height: 140px;
+    width: auto;
+  }
+  #consent div{
+    text-align: right;
+  }
+  .consGroup{
+    display: inline-block;
+    margin-left: 40px;
+    text-align: center;
+  }
   #consentBtn{
     position: relative;
     left: 50%;
@@ -56,11 +68,11 @@
 <div class="container">
   <div id="splash" class="row col-xs-12 col-md-12">
     <div id="splashdiv" class="panel panel-primary">
-      <div class="panel-heading">
+      <div class="panel-heading" style="text-align:center;font-size:25px;font-weight:bold">
         Visual Similarity of Two Objects
       </div>
       <div class="panel-body">
-        In this study you will be shown 80 total images which consist of two items side-by-side. 
+        In this study you will be shown 80 total images which each consist of two items side-by-side. 
         <br><br>
         Under each image there will be radio buttons from 1 to 7 with 1 meaning the objects are very visually dissimilar and 7 meaning they are very visually similar.
         <br><br>
@@ -68,9 +80,92 @@
         <br><br>
         The experiment will likely take around 10 minutes and you will be compensated with $1.60.
         <br><br>
-        <a href="http://qvcl.queensu.ca/turkimg/files/LetterOfInformation_Consent_MTurk_20170215.pdf">LINK TO LETTER OF INFORMATION/CONSENT FORM</a>
+        <div id="consent">
+          <div>
+          <img src="http://www.queensu.ca/mc_administrator/sites/default/files/assets/pages/QueensLogo_colour.jpg" alt="queens-logo">
+          </div>
+          <h2 style="text-align:center">Eye Movements and Cognitive Processing in Real-World Scenes</h2>
+          <h3 style="text-align:center">Letter of Information</h3>
+          <p><strong>
+            PLEASE NOTE: To print a copy of this letter of information so that you may refer back to
+            it throughout the survey, please select ‘print’ in your browser window now. You may also
+            request a digital copy by emailing <a href="mailto:qvcl_general@gmail.com">qvcl_general@gmail.com</a>.
+          </strong></p> 
+          <p>
+            <b>Background</b><br>
+            You are invited to participate in a research project conducted by the Queen’s Visual Cognition Laboratory.
+            The goal of this project is to learn more about how people understand people, objects and places. This
+            study has been granted clearance according to the recommended principles of Canadian ethics guidelines,
+            and Queen's policies.
+          </p>
+          <p>
+            <b>What is involved?</b><br>
+            If you decide to take part, you will be asked to rate a series of pictures/videos. You will be shown the
+            picture on screen and ask to rate them on a scale of 1-7. Participation will take approximately 5-10
+            minutes. 
+          </p>
+          <p>
+            <b>Will I be compensated?</b><br>
+            If you decide to take part, you will be compensated at a rate of .02 to .10 cents per judgement (e.g., rating
+            or categorization of a picture). The amount awarded will depend on how many judgements you are asked
+            to do at a given time and can vary from 40 to 100
+          </p>
+          <p>
+            <b>Will the information be kept confidential?</b><br>
+            All questionnaires you complete will be anonymous. Any identifying information you choose to provide
+            will be removed from any final reports. As such, your individual responses will not be identifiable.
+          </p>
+          <p>
+            <b>What are the risks?</b><br>
+            There are no foreseen risks to participating in this research.
+          </p>
+          <p>  
+            <b>there any benefits?</b><br>
+            We cannot guarantee that you will receive any personal benefit from participating in this study. However,
+            we expect that the results will improve our understanding of visual perception and memory. Findings from
+            this study will contribute to a growing body of knowledge on cognitive and neurocognitive understanding
+            of our minds.
+          </p>  
+          <p>  
+            <b>What are my rights as a participant in this study?</b><br>
+            Your participation is completely voluntary. You may discontinue your participation from the
+            study at any time or chose to not answer any questions by either: a) closing the browser window
+            or b) leaving blank any questions that you do not wish to answer. You are also free to refuse to
+            answer any question without need of any explanation on your part.
+          </p>
+          <p>              
+            <b>Who should I contact if I would like to request a summary of results or have questions?</b><br>
+            If you would like to request a summary of results or if you have any questions about your participation in
+            this project at any time, please contact the QVCL research team at <a href="mailto:qvcl_general@gmail.com">qvcl_general@gmail.com</a>. Any ethical
+            concerns about the study may be directed to the Chair of the General Research Ethics Board at
+            <a href="mailto:chair.GREB@queensu.ca">chair.GREB@queensu.ca</a> or 1-844-535-2988. 
+          </p>  
+          <p><i>
+            By clicking “yes” I consent to the information listed above and understand what is required for
+            participation in the study. I understand that I will complete a series of questions online. I also
+            understand that the research associates are available by e-mail should I have any questions or
+            require further information about any aspect of the study. I understand that my participation in the
+            study is completely voluntary and that I am free to withdraw at any time. I understand that to
+            withdraw from the study, I may close the browser or leave the answers for the remaining
+            questions blank. I also understand that my confidentiality will be protected throughout the study,
+            and that the information I provide will be available only to researchers with relevant scholarly
+            interests.
+            </i><br><br>
+            I have read the above statements and freely consent to participate in this research: 
+          </p>
+          <fieldset id="consentBtns">
+            <div class="consGroup">
+              <input type="radio" class="consentRad" name="consent" value="Yes">
+              <p>Yes</p>
+            </div>
+            <div class="consGroup">
+              <input type="radio" class="consentRad" name="consent" value="No">
+              <p>No</p>
+            </div>
+          </fieldset>
+        </div>
         <br><br>
-        <input type="button" class="button" id="consentBtn" value="Click to Continue to Questions">
+        <button type="button" class="btn" id="consentBtn" disabled="true">Click to Continue to Questions</button>
       </div>
     </div>
   </div>
@@ -97,7 +192,7 @@
       <input type="hidden" name="leftpic" value="${leftpic1}"/>
       <input type="hidden" name="rightpic" value="${rightpic1}"/>
       <input type="hidden" name="compare-image" value="${compare-image1}"/>
-      <img id="im1" src="http://qvcl.queensu.ca/turkimg/${compare-image1}"/>
+      <img id="im1" src=""/>
       <div class="buttongroup">
         <div class="button">
           <input type="radio" class="responseBtn" name="im1response" value="1" />
@@ -147,7 +242,7 @@
       <input type="hidden" name="leftpic" value="${leftpic2}"/>
       <input type="hidden" name="rightpic" value="${rightpic2}"/>
       <input type="hidden" name="compare-image" value="${compare-image2}"/>
-      <img id="im2" src="http://qvcl.queensu.ca/turkimg/${compare-image2}"/>
+      <img id="im2" src=""/>
       <div class="buttongroup">
         <div class="button">
           <input type="radio" class="responseBtn" name="im2response" value="1" />
@@ -197,7 +292,7 @@
       <input type="hidden" name="leftpic" value="${leftpic3}"/>
       <input type="hidden" name="rightpic" value="${rightpic3}"/>
       <input type="hidden" name="compare-image" value="${compare-image3}"/>
-      <img id="im3" src="http://qvcl.queensu.ca/turkimg/${compare-image3}"/>
+      <img id="im3" src=""/>
       <div class="buttongroup">
         <div class="button">
           <input type="radio" class="responseBtn" name="im3response" value="1" />
@@ -247,7 +342,7 @@
       <input type="hidden" name="leftpic" value="${leftpic4}"/>
       <input type="hidden" name="rightpic" value="${rightpic4}"/>
       <input type="hidden" name="compare-image" value="${compare-image4}"/>
-      <img id="im4" src="http://qvcl.queensu.ca/turkimg/${compare-image4}"/>
+      <img id="im4" src=""/>
       <div class="buttongroup">
         <div class="button">
           <input type="radio" class="responseBtn" name="im4response" value="1" />
@@ -288,28 +383,43 @@
 </div>
 
 <script type="text/javascript">
+  //Must agree to consent to continue. 
+  $('.consentRad').click(function(){
+    if ($('input[name=consent]:checked').val() == 'Yes'){
+      $('#consentBtn').prop('disabled',false); 
+      console.log('yes');
+    }
+    else{
+      $('#consentBtn').prop('disabled',true);
+      console.log('no');
+    }
+  })
   //After they click the consent button, hide info screen and pull up questions.
   $('#consentBtn').click(function(){
     $('#splash').hide();
     $('#questions').show();
+    $.ajax({
+      type:'GET',
+      dataType: "text",
+      url: "http://qvcl.queensu.ca/turkimg/files/4TargTypGroup1.csv",
+      async: false,
+      success: function (csvd,textStatus) {
+        alert("found .csv");
+        data = $.csv.toArrays(csvd);
+      },
+      error: function(xhr, textStatus, errorThrown){
+        alert('request failed');
+      },
+      complete: loadPageData(data)
+    });
   });
   //init vars for keeping track of pages and buttons.
   var pageCount = 1;
   var q1=false, q2=false, q3=false, q4=false;
-  var data;
   //Function to load in all of the values in the inputs for MTurk
-  $.ajax({
-    url: "http://qvcl.queensu.ca/turkimg/files/4TargTypGroup1.csv",
-    async: false,
-    success: function (csvd) {
-      console.log("found .csv");
-      data = $.csv.toArrays(csvd);
-    },
-    dataType: "text",
-    complete: loadPageData()
-  });
+  
   //Function updates values
-  function loadPageData(){
+  function loadPageData(data){
     console.log("rows " + data.length + "cols " + data[0].length);
     for(i=0; i<data.length; i++){
       for (j=0; j<data[i].length; j++){
