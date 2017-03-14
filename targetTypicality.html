@@ -27,6 +27,12 @@
     left: 50%;
     transform: translateX(-50%);
   }
+  #nextBtn{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 40px;
+  }
   img{
     width: 450px;
     margin-left: 75;
@@ -178,20 +184,8 @@
         <p>Compare the two objects in the image and rate on a scale of 1 to 7 how visually similar they appear to be. The submit button will appear after selecting a value for all 4 images.</p>
       </div>
     </div>
+    <h4 id="pageNum"></h4>
     <fieldset class="itemgroup" id="trial1">
-      <input type="hidden" name="SUBJECT-FILE" value="${SUBJECT-FILE}"/>
-      <input type="hidden" name="category" value="${category1}"/>
-      <input type="hidden" name="filename" value="${filename1}"/>
-      <input type="hidden" name="item" value="${item1}"/>
-      <input type="hidden" name="Tar_typ" value="${Tar_typ1}"/>
-      <input type="hidden" name="Dis_Typ" value="${Dis_Typ1}"/>
-      <input type="hidden" name="Sim-Dif" value="${Sim-Dif1}"/>
-      <input type="hidden" name="Dis_num" value="${Dis_num1}"/>
-      <input type="hidden" name="Tarpic" value="${Tarpic1}"/>
-      <input type="hidden" name="dispic" value="${dispic1}"/>
-      <input type="hidden" name="leftpic" value="${leftpic1}"/>
-      <input type="hidden" name="rightpic" value="${rightpic1}"/>
-      <input type="hidden" name="compare-image" value="${compare-image1}"/>
       <img id="im1" src=""/>
       <div class="buttongroup">
         <div class="button">
@@ -229,19 +223,6 @@
       </div>
     </fieldset>
     <fieldset class="itemgroup" id="trial2">
-      <input type="hidden" name="SUBJECT-FILE" value="${SUBJECT-FILE}"/>
-      <input type="hidden" name="category" value="${category2}"/>
-      <input type="hidden" name="filename" value="${filename2}"/>
-      <input type="hidden" name="item" value="${item2}"/>
-      <input type="hidden" name="Tar_typ" value="${Tar_typ2}"/>
-      <input type="hidden" name="Dis_Typ" value="${Dis_Typ2}"/>
-      <input type="hidden" name="Sim-Dif" value="${Sim-Dif2}"/>
-      <input type="hidden" name="Dis_num" value="${Dis_num2}"/>
-      <input type="hidden" name="Tarpic" value="${Tarpic2}"/>
-      <input type="hidden" name="dispic" value="${dispic2}"/>
-      <input type="hidden" name="leftpic" value="${leftpic2}"/>
-      <input type="hidden" name="rightpic" value="${rightpic2}"/>
-      <input type="hidden" name="compare-image" value="${compare-image2}"/>
       <img id="im2" src=""/>
       <div class="buttongroup">
         <div class="button">
@@ -279,19 +260,6 @@
       </div>
     </fieldset>
     <fieldset class="itemgroup" id="trial3">
-      <input type="hidden" name="SUBJECT-FILE" value="${SUBJECT-FILE}"/>
-      <input type="hidden" name="category" value="${category3}"/>
-      <input type="hidden" name="filename" value="${filename3}"/>
-      <input type="hidden" name="item" value="${item3}"/>
-      <input type="hidden" name="Tar_typ" value="${Tar_typ3}"/>
-      <input type="hidden" name="Dis_Typ" value="${Dis_Typ3}"/>
-      <input type="hidden" name="Sim-Dif" value="${Sim-Dif3}"/>
-      <input type="hidden" name="Dis_num" value="${Dis_num3}"/>
-      <input type="hidden" name="Tarpic" value="${Tarpic3}"/>
-      <input type="hidden" name="dispic" value="${dispic3}"/>
-      <input type="hidden" name="leftpic" value="${leftpic3}"/>
-      <input type="hidden" name="rightpic" value="${rightpic3}"/>
-      <input type="hidden" name="compare-image" value="${compare-image3}"/>
       <img id="im3" src=""/>
       <div class="buttongroup">
         <div class="button">
@@ -329,19 +297,7 @@
       </div>
     </fieldset>
     <fieldset class="itemgroup" id="trial4">
-      <input type="hidden" name="SUBJECT-FILE" value="${SUBJECT-FILE}"/>
-      <input type="hidden" name="category" value="${category4}"/>
-      <input type="hidden" name="filename" value="${filename4}"/>
-      <input type="hidden" name="item" value="${item4}"/>
-      <input type="hidden" name="Tar_typ" value="${Tar_typ4}"/>
-      <input type="hidden" name="Dis_Typ" value="${Dis_Typ4}"/>
-      <input type="hidden" name="Sim-Dif" value="${Sim-Dif4}"/>
-      <input type="hidden" name="Dis_num" value="${Dis_num4}"/>
-      <input type="hidden" name="Tarpic" value="${Tarpic4}"/>
-      <input type="hidden" name="dispic" value="${dispic4}"/>
-      <input type="hidden" name="leftpic" value="${leftpic4}"/>
-      <input type="hidden" name="rightpic" value="${rightpic4}"/>
-      <input type="hidden" name="compare-image" value="${compare-image4}"/>
+
       <img id="im4" src=""/>
       <div class="buttongroup">
         <div class="button">
@@ -378,8 +334,57 @@
         <p class="labelSeven">Very Similar</p>
       </div>
     </fieldset>
-    <input id="nextBtn" type="button" class"button" value="Next Page">
+    <input id="nextBtn" type="button" class"btn" disabled="true" href="#questions" value="Next Page">
   </div>
+    <input type="hidden" name="SUBJECT-FILE" />
+    <input type="hidden" name="category"/>
+    <input type="hidden" name="filename"/>
+    <input type="hidden" name="item"/>
+    <input type="hidden" name="Tar_typ"/>
+    <input type="hidden" name="Dis_Typ"/>
+    <input type="hidden" name="Sim-Dif"/>
+    <input type="hidden" name="Dis_num"/>
+    <input type="hidden" name="Tarpic"/>
+    <input type="hidden" name="dispic"/>
+    <input type="hidden" name="leftpic"/>
+    <input type="hidden" name="rightpic"/>
+    <input type="hidden" name="compare-image"/>
+    <input type="hidden" name="category"/>
+    <input type="hidden" name="filename"/>
+    <input type="hidden" name="item"/>
+    <input type="hidden" name="Tar_typ"/>
+    <input type="hidden" name="Dis_Typ"/>
+    <input type="hidden" name="Sim-Dif"/>
+    <input type="hidden" name="Dis_num"/>
+    <input type="hidden" name="Tarpic"/>
+    <input type="hidden" name="dispic"/>
+    <input type="hidden" name="leftpic"/>
+    <input type="hidden" name="rightpic"/>
+    <input type="hidden" name="compare-image"/>
+    <input type="hidden" name="category"/>
+    <input type="hidden" name="filename"/>
+    <input type="hidden" name="item"/>
+    <input type="hidden" name="Tar_typ"/>
+    <input type="hidden" name="Dis_Typ"/>
+    <input type="hidden" name="Sim-Dif"/>
+    <input type="hidden" name="Dis_num"/>
+    <input type="hidden" name="Tarpic"/>
+    <input type="hidden" name="dispic"/>
+    <input type="hidden" name="leftpic"/>
+    <input type="hidden" name="rightpic"/>
+    <input type="hidden" name="compare-image"/>
+    <input type="hidden" name="category"/>
+    <input type="hidden" name="filename"/>
+    <input type="hidden" name="item"/>
+    <input type="hidden" name="Tar_typ"/>
+    <input type="hidden" name="Dis_Typ"/>
+    <input type="hidden" name="Sim-Dif"/>
+    <input type="hidden" name="Dis_num"/>
+    <input type="hidden" name="Tarpic"/>
+    <input type="hidden" name="dispic"/>
+    <input type="hidden" name="leftpic"/>
+    <input type="hidden" name="rightpic"/>
+    <input type="hidden" name="compare-image"/>
 </div>
 
 <script type="text/javascript">
@@ -387,50 +392,55 @@
   $('.consentRad').click(function(){
     if ($('input[name=consent]:checked').val() == 'Yes'){
       $('#consentBtn').prop('disabled',false); 
-      console.log('yes');
     }
     else{
       $('#consentBtn').prop('disabled',true);
-      console.log('no');
     }
   })
   //After they click the consent button, hide info screen and pull up questions.
   $('#consentBtn').click(function(){
     $('#splash').hide();
     $('#questions').show();
-    $.ajax({
-      type:'GET',
-      dataType: "text",
-      url: "http://qvcl.queensu.ca/turkimg/files/4TargTypGroup1.csv",
-      async: false,
-      success: function (csvd,textStatus) {
-        alert("found .csv");
-        data = $.csv.toArrays(csvd);
-      },
-      error: function(xhr, textStatus, errorThrown){
-        alert('request failed');
-      },
-      complete: loadPageData(data)
-    });
+    loadPageData();
+    updatePageData();
   });
+  var data = [ 
+  ["SUBJECT-FILE","category1","filename1","item1","Tar_typ1","Dis_Typ1","Sim-Dif1","Dis_num1","Tarpic1","dispic1","leftpic1","rightpic1","compare-image1","category2","filename2","item2","Tar_typ2","Dis_Typ2","Sim-Dif2","Dis_num2","Tarpic2","dispic2","leftpic2","rightpic2","compare-image2","category3","filename3","item3","Tar_typ3","Dis_Typ3","Sim-Dif3","Dis_num3","Tarpic3","dispic3","leftpic3","rightpic3","compare-image3","category4","filename4","item4","Tar_typ4","Dis_Typ4","Sim-Dif4","Dis_num4","Tarpic4","dispic4","leftpic4","rightpic4","compare-image4"],
+  ["1","GLASSES ","GLASSES","22","Typical","atyp","dis","4","Typical_GLASSES.tga","GLASSES_atyp_dis4.tga","GLASSES_atyp_dis4.tga","Typical_GLASSES.tga","Typical_GLASSES_atyp_dis4.bmp","DRUM ","DRUM","19","Atypical","typ","sim","4","Atypical_DRUM.tga","DRUM_typ_sim4.tga","Atypical_DRUM.tga","DRUM_typ_sim4.tga","Atypical_DRUM_typ_sim4.bmp","HELMET ","HELMET","27","Typical","typ","dis","4","Typical_HELMET.tga","HELMET_typ_dis4.tga","Typical_HELMET.tga","HELMET_typ_dis4.tga","Typical_HELMET_typ_dis4.bmp","GLASSES ","GLASSES","22","Atypical","atyp","dis","3","Atypical_GLASSES.tga","GLASSES_atyp_dis3.tga","GLASSES_atyp_dis3.tga","Atypical_GLASSES.tga","Atypical_GLASSES_atyp_dis3.bmp"],
+  ["1","PISTOL ","PISTOL","32","Atypical","atyp","dis","3","Atypical_PISTOL.tga","PISTOL_atyp_dis3.tga","PISTOL_atyp_dis3.tga","Atypical_PISTOL.tga","Atypical_PISTOL_atyp_dis3.bmp","BAG ","BAG","3","Atypical","atyp","dis","1","Atypical_BAG.tga","BAG_atyp_dis1.tga","Atypical_BAG.tga","BAG_atyp_dis1.tga","Atypical_BAG_atyp_dis1.bmp","LAMP ","LAMP","29","Typical","typ","sim","5","Typical_LAMP.tga","LAMP_typ_sim5.tga","Typical_LAMP.tga","LAMP_typ_sim5.tga","Typical_LAMP_typ_sim5.bmp","TABLE","TABLE","37","Typical","typ","dis","4","Typical_TABLE.tga","TABLE_typ_dis4.tga","Typical_TABLE.tga","TABLE_typ_dis4.tga","Typical_TABLE_typ_dis4.bmp"],
+  ["1","TELEPHONE ","TELEPHONE","39","Atypical","typ","sim","4","Atypical_TELEPHONE.tga","TELEPHONE_typ_sim4.tga","Atypical_TELEPHONE.tga","TELEPHONE_typ_sim4.tga","Atypical_TELEPHONE_typ_sim4.bmp","TAPE DISPENSER ","TAPE","38","Atypical","typ","dis","1","Atypical_TAPE.tga","TAPE_typ_dis1.tga","TAPE_typ_dis1.tga","Atypical_TAPE.tga","Atypical_TAPE_typ_dis1.bmp","BOTTLE ","BOTTLE","7","Atypical","typ","dis","3","Atypical_BOTTLE.tga","BOTTLE_typ_dis3.tga","Atypical_BOTTLE.tga","BOTTLE_typ_dis3.tga","Atypical_BOTTLE_typ_dis3.bmp","DRUM ","DRUM","19","Typical","typ","sim","5","Typical_DRUM.tga","DRUM_typ_sim5.tga","Typical_DRUM.tga","DRUM_typ_sim5.tga","Typical_DRUM_typ_sim5.bmp"],
+  ["1","PISTOL ","PISTOL","32","Typical","atyp","dis","4","Typical_PISTOL.tga","PISTOL_atyp_dis4.tga","PISTOL_atyp_dis4.tga","Typical_PISTOL.tga","Typical_PISTOL_atyp_dis4.bmp","DOORKNOB ","DOORKNOB","17","Atypical","typ","dis","3","Atypical_DOORKNOB.tga","DOORKNOB_typ_dis3.tga","Atypical_DOORKNOB.tga","DOORKNOB_typ_dis3.tga","Atypical_DOORKNOB_typ_dis3.bmp","TELEPHONE ","TELEPHONE","39","Typical","typ","sim","5","Typical_TELEPHONE.tga","TELEPHONE_typ_sim5.tga","Typical_TELEPHONE.tga","TELEPHONE_typ_sim5.tga","Typical_TELEPHONE_typ_sim5.bmp","WRENCH ","WRENCH","40","Atypical","typ","sim","2","Atypical_WRENCH.tga","WRENCH_typ_sim2.tga","WRENCH_typ_sim2.tga","Atypical_WRENCH.tga","Atypical_WRENCH_typ_sim2.bmp"],
+  ["1","HAT ","HAT","25","Typical","atyp","sim","3","Typical_HAT.tga","HAT_atyp_sim3.tga","Typical_HAT.tga","HAT_atyp_sim3.tga","Typical_HAT_atyp_sim3.bmp","SAW ","SAW","33","Typical","atyp","dis","2","Typical_SAW.tga","SAW_atyp_dis2.tga","Typical_SAW.tga","SAW_atyp_dis2.tga","Typical_SAW_atyp_dis2.bmp","CACTUS ","CACTUS","9","Atypical","typ","sim","4","Atypical_CACTUS.tga","CACTUS_typ_sim4.tga","Atypical_CACTUS.tga","CACTUS_typ_sim4.tga","Atypical_CACTUS_typ_sim4.bmp","AXE ","AXE","2","Typical","atyp","dis","4","Typical_AXE.tga","AXE_atyp_dis4.tga","AXE_atyp_dis4.tga","Typical_AXE.tga","Typical_AXE_atyp_dis4.bmp"],
+  ["1","FLOWER ","FLOWER","21","Atypical","atyp","dis","5","Atypical_FLOWER.tga","FLOWER_atyp_dis5.tga","Atypical_FLOWER.tga","FLOWER_atyp_dis5.tga","Atypical_FLOWER_atyp_dis5.bmp","CLOCK ","CLOCK","14","Atypical","atyp","sim","4","Atypical_CLOCK.tga","CLOCK_atyp_sim4.tga","CLOCK_atyp_sim4.tga","Atypical_CLOCK.tga","Atypical_CLOCK_atyp_sim4.bmp","GRENADE ","GRENADE","23","Atypical","atyp","dis","1","Atypical_GRENADE.tga","GRENADE_atyp_dis1.tga","Atypical_GRENADE.tga","GRENADE_atyp_dis1.tga","Atypical_GRENADE_atyp_dis1.bmp","SCISSORS ","SCISSORS","34","Atypical","atyp","sim","4","Atypical_SCISSORS.tga","SCISSORS_atyp_sim4.tga","SCISSORS_atyp_sim4.tga","Atypical_SCISSORS.tga","Atypical_SCISSORS_atyp_sim4.bmp"],
+  ["1","CHAIR ","CHAIR","13","Typical","atyp","dis","2","Typical_CHAIR.tga","CHAIR_atyp_dis2.tga","Typical_CHAIR.tga","CHAIR_atyp_dis2.tga","Typical_CHAIR_atyp_dis2.bmp","LEAF ","LEAF","30","Typical","typ","sim","3","Typical_LEAF.tga","LEAF_typ_sim3.tga","LEAF_typ_sim3.tga","Typical_LEAF.tga","Typical_LEAF_typ_sim3.bmp","BOTTLE ","BOTTLE","7","Typical","typ","dis","4","Typical_BOTTLE.tga","BOTTLE_typ_dis4.tga","Typical_BOTTLE.tga","BOTTLE_typ_dis4.tga","Typical_BOTTLE_typ_dis4.bmp","TABLE ","TABLE","37","Atypical","typ","dis","3","Atypical_TABLE.tga","TABLE_typ_dis3.tga","Atypical_TABLE.tga","TABLE_typ_dis3.tga","Atypical_TABLE_typ_dis3.bmp"],
+  ["1","CUP ","CUP","15","Atypical","atyp","sim","2","Atypical_CUP.tga","CUP_atyp_sim2.tga","Atypical_CUP.tga","CUP_atyp_sim2.tga","Atypical_CUP_atyp_sim2.bmp","HAT ","HAT","25","Atypical","atyp","sim","2","Atypical_HAT.tga","HAT_atyp_sim2.tga","Atypical_HAT.tga","HAT_atyp_sim2.tga","Atypical_HAT_atyp_sim2.bmp","DRILL ","DRILL","18","Atypical","typ","dis","1","Atypical_DRILL.tga","DRILL_typ_dis1.tga","DRILL_typ_dis1.tga","Atypical_DRILL.tga","Atypical_DRILL_typ_dis1.bmp","FAN ","FAN","20","Typical","typ","sim","3","Typical_FAN.tga","FAN_typ_sim3.tga","FAN_typ_sim3.tga","Typical_FAN.tga","Typical_FAN_typ_sim3.bmp"],
+  ["1","DOORKNOB ","DOORKNOB","17","Typical","typ","dis","4","Typical_DOORKNOB.tga","DOORKNOB_typ_dis4.tga","Typical_DOORKNOB.tga","DOORKNOB_typ_dis4.tga","Typical_DOORKNOB_typ_dis4.bmp","PIPE ","PIPE","31","Typical","typ","sim","1","Typical_PIPE.tga","PIPE_typ_sim1.tga","Typical_PIPE.tga","PIPE_typ_sim1.tga","Typical_PIPE_typ_sim1.bmp","HELMET ","HELMET","27","Atypical","typ","dis","3","Atypical_HELMET.tga","HELMET_typ_dis3.tga","Atypical_HELMET.tga","HELMET_typ_dis3.tga","Atypical_HELMET_typ_dis3.bmp","CANDLE ","CANDLE","12","Typical","atyp","dis","4","Typical_CANDLE.tga","CANDLE_atyp_dis4.tga","CANDLE_atyp_dis4.tga","Typical_CANDLE.tga","Typical_CANDLE_atyp_dis4.bmp"],
+  ["1","BAG ","BAG","3","Typical","atyp","dis","2","Typical_BAG.tga","BAG_atyp_dis2.tga","Typical_BAG.tga","BAG_atyp_dis2.tga","Typical_BAG_atyp_dis2.bmp","CHAIR ","CHAIR","13","Atypical","atyp","dis","1","Atypical_CHAIR.tga","CHAIR_atyp_dis1.tga","Atypical_CHAIR.tga","CHAIR_atyp_dis1.tga","Atypical_CHAIR_atyp_dis1.bmp","LAMP ","LAMP","29","Atypical","typ","sim","4","Atypical_LAMP.tga","LAMP_typ_sim4.tga","Atypical_LAMP.tga","LAMP_typ_sim4.tga","Atypical_LAMP_typ_sim4.bmp","CAKE ","CAKE","10","Atypical","typ","sim","2","Atypical_CAKE.tga","CAKE_typ_sim2.tga","CAKE_typ_sim2.tga","Atypical_CAKE.tga","Atypical_CAKE_typ_sim2.bmp"],
+  ["1","SWORD ","SWORD","36","Atypical","typ","dis","5","Atypical_SWORD.tga","SWORD_typ_dis5.tga","SWORD_typ_dis5.tga","Atypical_SWORD.tga","Atypical_SWORD_typ_dis5.bmp","CAKE","CAKE","10","Typical","typ","sim","3","Typical_CAKE.tga","CAKE_typ_sim3.tga","CAKE_typ_sim3.tga","Typical_CAKE.tga","Typical_CAKE_typ_sim3.bmp","BICYCLE ","BICYCLE","6","Atypical","typ","dis","5","Atypical_BICYCLE.tga","BICYCLE_typ_dis5.tga","BICYCLE_typ_dis5.tga","Atypical_BICYCLE.tga","Atypical_BICYCLE_typ_dis5.bmp","SCISSORS ","SCISSORS","34","Typical","atyp","sim","5","Typical_SCISSORS.tga","SCISSORS_atyp_sim5.tga","SCISSORS_atyp_sim5.tga","Typical_SCISSORS.tga","Typical_SCISSORS_atyp_sim5.bmp"],
+  ["1","CANDLE ","CANDLE","12","Atypical","atyp","dis","3","Atypical_CANDLE.tga","CANDLE_atyp_dis3.tga","CANDLE_atyp_dis3.tga","Atypical_CANDLE.tga","Atypical_CANDLE_atyp_dis3.bmp","CLOCK","CLOCK","14","Typical","atyp","sim","5","Typical_CLOCK.tga","CLOCK_atyp_sim5.tga","CLOCK_atyp_sim5.tga","Typical_CLOCK.tga","Typical_CLOCK_atyp_sim5.bmp","DOG ","DOG","16","Atypical","typ","dis","5","Atypical_DOG.tga","DOG_typ_dis5.tga","DOG_typ_dis5.tga","Atypical_DOG.tga","Atypical_DOG_typ_dis5.bmp","FAN ","FAN","20","Atypical","typ","sim","2","Atypical_FAN.tga","FAN_typ_sim2.tga","FAN_typ_sim2.tga","Atypical_FAN.tga","Atypical_FAN_typ_sim2.bmp"],
+  ["1","SAW ","SAW","33","Atypical","atyp","dis","1","Atypical_SAW.tga","SAW_atyp_dis1.tga","Atypical_SAW.tga","SAW_atyp_dis1.tga","Atypical_SAW_atyp_dis1.bmp","APPLE ","APPLE","1","Typical","typ","sim","1","Typical_APPLE.tga","APPLE_typ_sim1.tga","Typical_APPLE.tga","APPLE_typ_sim1.tga","Typical_APPLE_typ_sim1.bmp","DOG","DOG","16","Typical","atyp","sim","1","Typical_DOG.tga","DOG_atyp_sim1.tga","DOG_atyp_sim1.tga","Typical_DOG.tga","Typical_DOG_atyp_sim1.bmp","PIPE ","PIPE","31","Atypical","atyp","dis","5","Atypical_PIPE.tga","PIPE_atyp_dis5.tga","Atypical_PIPE.tga","PIPE_atyp_dis5.tga","Atypical_PIPE_atyp_dis5.bmp"],
+  ["1","BASKET ","BASKET","4","Atypical","atyp","sim","4","Atypical_BASKET.tga","BASKET_atyp_sim4.tga","BASKET_atyp_sim4.tga","Atypical_BASKET.tga","Atypical_BASKET_atyp_sim4.bmp","BRIEFCASE","BRIEFCASE","8","Typical","typ","dis","2","Typical_BRIEFCASE.tga","BRIEFCASE_typ_dis2.tga","BRIEFCASE_typ_dis2.tga","Typical_BRIEFCASE.tga","Typical_BRIEFCASE_typ_dis2.bmp","BICYCLE ","BICYCLE","6","Typical","atyp","sim","1","Typical_BICYCLE.tga","BICYCLE_atyp_sim1.tga","BICYCLE_atyp_sim1.tga","Typical_BICYCLE.tga","Typical_BICYCLE_atyp_sim1.bmp","STAPLER ","STAPLER","35","Typical","atyp","sim","3","Typical_STAPLER.tga","STAPLER_atyp_sim3.tga","Typical_STAPLER.tga","STAPLER_atyp_sim3.tga","Typical_STAPLER_atyp_sim3.bmp"],
+  ["1","STAPLER ","STAPLER","35","Atypical","atyp","sim","2","Atypical_STAPLER.tga","STAPLER_atyp_sim2.tga","Atypical_STAPLER.tga","STAPLER_atyp_sim2.tga","Atypical_STAPLER_atyp_sim2.bmp","IRON ","IRON","28","Typical","typ","dis","2","Typical_IRON.tga","IRON_typ_dis2.tga","IRON_typ_dis2.tga","Typical_IRON.tga","Typical_IRON_typ_dis2.bmp","BENCH","BENCH","5","Typical","atyp","sim","3","Typical_BENCH.tga","BENCH_atyp_sim3.tga","Typical_BENCH.tga","BENCH_atyp_sim3.tga","Typical_BENCH_atyp_sim3.bmp","IRON ","IRON","28","Atypical","typ","dis","1","Atypical_IRON.tga","IRON_typ_dis1.tga","IRON_typ_dis1.tga","Atypical_IRON.tga","Atypical_IRON_typ_dis1.bmp"],
+  ["1","GRENADE ","GRENADE","23","Typical","atyp","dis","2","Typical_GRENADE.tga","GRENADE_atyp_dis2.tga","Typical_GRENADE.tga","GRENADE_atyp_dis2.tga","Typical_GRENADE_atyp_dis2.bmp","BENCH ","BENCH","5","Atypical","atyp","sim","2","Atypical_BENCH.tga","BENCH_atyp_sim2.tga","Atypical_BENCH.tga","BENCH_atyp_sim2.tga","Atypical_BENCH_atyp_sim2.bmp","DRILL ","DRILL","18","Typical","typ","dis","2","Typical_DRILL.tga","DRILL_typ_dis2.tga","DRILL_typ_dis2.tga","Typical_DRILL.tga","Typical_DRILL_typ_dis2.bmp","AXE ","AXE","2","Atypical","atyp","dis","3","Atypical_AXE.tga","AXE_atyp_dis3.tga","AXE_atyp_dis3.tga","Atypical_AXE.tga","Atypical_AXE_atyp_dis3.bmp"],
+  ["1","HEADPHONES ","HEADPHONES","26","Atypical","typ","dis","5","Atypical_HEADPHONES.tga","HEADPHONES_typ_dis5.tga","HEADPHONES_typ_dis5.tga","Atypical_HEADPHONES.tga","Atypical_HEADPHONES_typ_dis5.bmp","CACTUS ","CACTUS","9","Typical","typ","sim","5","Typical_CACTUS.tga","CACTUS_typ_sim5.tga","Typical_CACTUS.tga","CACTUS_typ_sim5.tga","Typical_CACTUS_typ_sim5.bmp","CAMERA ","CAMERA","11","Typical","typ","sim","1","Typical_CAMERA.tga","CAMERA_typ_sim1.tga","Typical_CAMERA.tga","CAMERA_typ_sim1.tga","Typical_CAMERA_typ_sim1.bmp","CAMERA ","CAMERA","11","Atypical","atyp","dis","5","Atypical_CAMERA.tga","CAMERA_atyp_dis5.tga","Atypical_CAMERA.tga","CAMERA_atyp_dis5.tga","Atypical_CAMERA_atyp_dis5.bmp"],
+  ["1","SWORD ","SWORD","36","Typical","atyp","sim","1","Typical_SWORD.tga","SWORD_atyp_sim1.tga","SWORD_atyp_sim1.tga","Typical_SWORD.tga","Typical_SWORD_atyp_sim1.bmp","BRIEFCASE ","BRIEFCASE","8","Atypical","typ","dis","1","Atypical_BRIEFCASE.tga","BRIEFCASE_typ_dis1.tga","BRIEFCASE_typ_dis1.tga","Atypical_BRIEFCASE.tga","Atypical_BRIEFCASE_typ_dis1.bmp","LEAF ","LEAF","30","Atypical","typ","sim","2","Atypical_LEAF.tga","LEAF_typ_sim2.tga","LEAF_typ_sim2.tga","Atypical_LEAF.tga","Atypical_LEAF_typ_sim2.bmp","HAMMER ","HAMMER","24","Typical","atyp","sim","5","Typical_HAMMER.tga","HAMMER_atyp_sim5.tga","HAMMER_atyp_sim5.tga","Typical_HAMMER.tga","Typical_HAMMER_atyp_sim5.bmp"],
+  ["1","FLOWER ","FLOWER","21","Typical","typ","sim","1","Typical_FLOWER.tga","FLOWER_typ_sim1.tga","Typical_FLOWER.tga","FLOWER_typ_sim1.tga","Typical_FLOWER_typ_sim1.bmp","HAMMER ","HAMMER","24","Atypical","atyp","sim","4","Atypical_HAMMER.tga","HAMMER_atyp_sim4.tga","HAMMER_atyp_sim4.tga","Atypical_HAMMER.tga","Atypical_HAMMER_atyp_sim4.bmp","TAPE DISPENSER ","TAPE","38","Typical","typ","dis","2","Typical_TAPE.tga","TAPE_typ_dis2.tga","TAPE_typ_dis2.tga","Typical_TAPE.tga","Typical_TAPE_typ_dis2.bmp","BASKET ","BASKET","4","Typical","atyp","sim","5","Typical_BASKET.tga","BASKET_atyp_sim5.tga","BASKET_atyp_sim5.tga","Typical_BASKET.tga","Typical_BASKET_atyp_sim5.bmp"],
+  ["1","WRENCH ","WRENCH","40","Typical","typ","sim","3","Typical_WRENCH.tga","WRENCH_typ_sim3.tga","WRENCH_typ_sim3.tga","Typical_WRENCH.tga","Typical_WRENCH_typ_sim3.bmp","APPLE ","APPLE","1","Atypical","atyp","dis","5","Atypical_APPLE.tga","APPLE_atyp_dis5.tga","Atypical_APPLE.tga","APPLE_atyp_dis5.tga","Atypical_APPLE_atyp_dis5.bmp","HEADPHONES2","HEADPHONES","26","Typical","atyp","sim","1","Typical_HEADPHONES.tga","HEADPHONES_atyp_sim1.tga","HEADPHONES_atyp_sim1.tga","Typical_HEADPHONES.tga","Typical_HEADPHONES_atyp_sim1.bmp","CUP ","CUP","15","Typical","atyp","sim","3","Typical_CUP.tga","CUP_atyp_sim3.tga","Typical_CUP.tga","CUP_atyp_sim3.tga","Typical_CUP_atyp_sim3.bmp"]];
   //init vars for keeping track of pages and buttons.
   var pageCount = 1;
   var q1=false, q2=false, q3=false, q4=false;
   //Function to load in all of the values in the inputs for MTurk
-  
-  //Function updates values
-  function loadPageData(data){
-    console.log("rows " + data.length + "cols " + data[0].length);
-    for(i=0; i<data.length; i++){
-      for (j=0; j<data[i].length; j++){
+  function loadPageData(){
 
-      }
-    }
+  }
+  //Function updates values
+  function updatePageData(){
+    $('#pageNum').text("Page "+pageCount+" of 20:")
     //set images
-    $('#im1').attr("src","http://qvcl.queensu.ca/turkimg/" + data[pageCount+1][12]);
-    $('#im2').attr("src","http://qvcl.queensu.ca/turkimg/" + data[pageCount+1][24]);
-    $('#im3').attr("src","http://qvcl.queensu.ca/turkimg/" + data[pageCount+1][36]);
-    $('#im4').attr("src","http://qvcl.queensu.ca/turkimg/" + data[pageCount+1][48]);
+    $('#im1').attr("src","http://qvcl.queensu.ca/turkimg/" + data[pageCount][12]);
+    $('#im2').attr("src","http://qvcl.queensu.ca/turkimg/" + data[pageCount][24]);
+    $('#im3').attr("src","http://qvcl.queensu.ca/turkimg/" + data[pageCount][36]);
+    $('#im4').attr("src","http://qvcl.queensu.ca/turkimg/" + data[pageCount][48]);
   }
   //Function for revealing next/submit button once they've answered the 4 buttons on the page.
   $('.responseBtn').click(function(e){
@@ -450,7 +460,7 @@
     }
     if (q1 && q2 && q3 && q4){
       if (pageCount <20){ //If they're not at the end, show the next page.
-        $('#nextBtn').show();
+        $('#nextBtn').prop('disabled',false);//allow next button
       }
       else{ //If they're at the end, show submit.
         $('#submitButton').show();
@@ -460,7 +470,17 @@
   //Next Button Function to load the values. 
   $('#nextBtn').click(function(){
     pageCount++;
-    loadPageData();
+    if (pageCount>=20){ //If they're at the end, hide the next button.
+      $('#nextBtn').hide();
+    }
+    loadPageData(); //update screen values
+    window.scrollTo(0,0);
+    $(this).prop('disabled',true); //disable button and counters
+    q1=false;
+    q2=false;
+    q3=false;
+    q4=false;
+    $('.responseBtn').prop('checked',false);
   });
     
   
